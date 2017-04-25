@@ -1,0 +1,13 @@
+{
+  "name": "haraka_local",
+  "description": "An SMTP Server",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "haraka -c ./"
+  },
+  "dependencies": {
+    "Haraka": "^2.8.13"
+  },
+  "repository": "",
+  "license": "MIT"
+}

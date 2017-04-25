@@ -1,0 +1,4 @@
+swaks -h email.dlactions.com -f cam@dlactions.com -t test@email.dlactions.com -s email.dlactions.com -p 25
+sudo invoke-rc.d iptables-persistent save
+sudo iptables -A INPUT -p tcp --dport 25 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+sudo iptables -A OUTPUT -p tcp --sport 25 -m conntrack --ctstate ESTABLISHED -j ACCEPT
